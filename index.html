@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pokeselect</title>
+  <link rel="stylesheet" href="/pokemon.css">
+</head>
+<body>
+  <h1>Pokeselect</h1>
+  <label for="pokemon-select">Selecciona un Pokémon:</label>
+  <select id="pokemon-select" onchange="showDescription()">
+    <option value="">--Selecciona un Pokémon--</option>
+    <option value="pikachu">Pikachu</option>
+    <option value="charizard">Charizard</option>
+    <option value="tsareena">Tsareena</option>
+    <!-- Agrega más opciones de Pokémon si lo deseas -->
+  </select>
+
+  <div id="pokemon-info">
+    <br>
+    <img id="pokemon-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png" alt="Imagen del Pokémon">
+    <p id="pokemon-description"></p>
+  </div>
+
+  <script src="pokemon.js"></script>
+</body>
+</html>
